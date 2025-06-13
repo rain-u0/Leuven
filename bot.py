@@ -9,6 +9,10 @@ load_dotenv()  #
 
 app = Flask(__name__)
 
+print("TOKEN from ENV:", os.getenv("CHANNEL_ACCESS_TOKEN"))
+print("SECRET from ENV:", os.getenv("CHANNEL_SECRET"))
+
+
 CHANNEL_ACCESS_TOKEN = os.getenv('CHANNEL_ACCESS_TOKEN')
 CHANNEL_SECRET = os.getenv('CHANNEL_SECRET')
 
